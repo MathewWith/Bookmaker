@@ -1,40 +1,47 @@
-import Bids from '../Bids';
-import Header from '../Header';
-import './App.css';
+import Events from '../events';
+import Header from '../header';
+import './app.scss';
 import {Route, Routes , useLocation} from 'react-router-dom';
-import Details from '../Details';
+import Details from '../details';
 import {useState} from 'react';
-import {data} from '../../shared/const';
+import {events} from '../../shared/const';
+import {getTeamName} from "../../shared/helpers/getTeamName";
 
 function App() {
 
-  const [betMassage, setBetMassage] = useState('')
-  const [betId, setBetId] = useState('')
-  
+  const [betResult, setBetResult] = useState(null)
+  const [lastEvent, setLastEvent] = useState(null)
   let location = useLocation()
-  let massage = betMassage ? 'success' : 'failure';
 
-  const setNewBetId = () => {
-    setTimeout(() => (setBetId('')), 4000)
+  const getInfoMessage = () => {
+    return (
+      (location.pathname === '/' && betResult && lastEvent.id)
+        ? `Спасибо, Ваша ставка принята [${getTeamName(lastEvent, 0)} -- ${getTeamName(lastEvent, 2)}]`
+        : null
+    )
+  }
+
+  const clearLastBet = () => {
+    setLastEvent(null);
+    setBetResult(null);
   }
   
   return (
-    <div className="App">
-      {betId ? setNewBetId() : null}
+    <div className="app">
         <Header />
-        <div className={massage}>
-          {
-            (location.pathname === '/' && betId) 
-              ? `Спасибо, Ваша ставка принята [${data[betId-1].team1} -- ${data[betId-1].team2}, ${betMassage}]` 
-              : null
-          }  
+        <div>
+          {getInfoMessage()}
         </div>
         <Routes>
-          <Route path="/" element={<Bids data={data}/>}/>
-          <Route path="/bet/:id" element={<Details data={data} setBetMassage={setBetMassage} setBetId={setBetId}/>}/>
+          <Route path="/" element={<Events data={events}/>}/>
+          <Route path="/bet/:id"
+                 element={
+                   <Details
+                     setBetResult={setBetResult}
+                     setLastEvent={setLastEvent}
+                     clearLastBet={clearLastBet}/>
+                 }/>
         </Routes>
-        
-        
     </div>
   );
 }

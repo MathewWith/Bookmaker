@@ -1,19 +1,17 @@
-.App {
-  max-width: 1550px;
-  height: 770px;
+.app {
+  position: relative;
   background-color: #e0dede;
   display: flex;
   flex-direction: column;
 }
 
-@media (max-width: 490px) {
-  .App {
-    height: 851px;
-  }
-}
+/*@media (max-width: 490px) {*/
+/*  .App {*/
+/*    height: 851px;*/
+/*  }*/
+/*}*/
 
 .App .success {
-  text-align: center;
   font-size: 24px;
   font-weight: bold;
   text-decoration: underline;
