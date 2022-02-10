@@ -1,0 +1,118 @@
+.details {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 4vh;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 8vh 20vw;
+  border-radius: 5px;
+  background-color: rgb(239, 241, 241);
+
+  &__date {
+    margin-bottom: 10px;
+  }
+
+  &__buttons {
+    display: flex;
+
+    > button {
+      margin-left: 4px;
+    }
+  }
+
+  > button {
+    margin-top: 8px;
+    border: none;
+    background-color: #A8B054;
+    border-radius: 5px;
+    padding: 8px 20px;
+  }
+}
+
+button {
+  &:hover, &.active {
+    opacity: 0.7;
+  }
+}
+
+//.details .details-wrap .details-wrap-date {
+//  margin: 0%;
+//}
+//
+//.details .details-wrap .details-wrap-name {
+//  max-width: 100%;
+//  margin-bottom: 15px;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//}
+//
+//@media (max-width: 650px) {
+//  .details .details-wrap .details-wrap-name {
+//    margin-bottom: 5px;
+//  }
+//}
+//
+//@media (max-width: 650px) {
+//  .details .details-wrap .details-wrap-name .bet-name {
+//    min-height: 20px;
+//    max-width: 100%;
+//    font-size: 20px;
+//  }
+//}
+//
+//.details .details-wrap .bet-name {
+//  background-color: #000;
+//  border-radius: 5px;
+//  text-align: center;
+//  color: #fff;
+//  font-size: 27px;
+//  max-width: 40%;
+//  margin: 0%;
+//}
+//
+//.details .details-wrap .details-wrap-bet {
+//  font-size: 20px;
+//  border-radius: 10px;
+//  border: 0px;
+//  background-color: yellow;
+//}
+//
+//.details .details-wrap .details-wrap-bet:active {
+//  background-color: rgb(168, 168, 6);
+//}
+//
+//.details .details-wrap .details-wrap-bet:hover {
+//  cursor: pointer;
+//}
+//
+//.details .details-wrap .details-wrap-button {
+//  display: flex;
+//  justify-content: center;
+//  margin-bottom: 15px;
+//}
+//
+//@media (max-width: 650px) {
+//  .details .details-wrap .details-wrap-button .bids {
+//    max-width: 55px;
+//    max-height: 30px;
+//    font-size: 12px;
+//  }
+//}
+//
+//.details .details-wrap .details-wrap-button .bids {
+//  width: 90px;
+//  height: 40px;
+//  border: 1px solid black;
+//}
+//
+//.details .details-wrap .details-wrap-button .bids:active {
+//  background-color: cadetblue;
+//}
+//
+//.details .details-wrap .details-wrap-button .bids:hover {
+//  cursor: pointer;
+//}

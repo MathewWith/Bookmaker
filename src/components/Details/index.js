@@ -1,4 +1,4 @@
-import {Details} from "./Details";
-import "./Details.css";
+import {Details} from "./details";
+import "./details.scss";
 
 export default Details;
