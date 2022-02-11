@@ -1,65 +1,170 @@
-export const data = [
+export const events = [
     {
-      team1: "Барселона",
-      team2: "Реал Мадрид",
       id: 1,
-      date: "10.02.2022",
-      win1: "1.51",
-      win2: "1.78",
-      draw: "2.25",
+      bets: [
+        {
+          name: "Барселона",
+          title: "win1",
+          ratio: "1.51",
+          position: 0
+        },
+        {
+          name: "Ничья",
+          title: "draw",
+          ratio: "2.25",
+          position: 1
+        },
+        {
+          name: "Реал Мадрид",
+          title: "win2",
+          ratio: "1.78",
+          position: 2
+        }
+      ],
+      date: new Date("10.02.2022").toLocaleString(),
     },
     {
-      team1: "Бавария",
-      team2: "Лестер",
       id: 2,
-      date: "17.02.2022",
-      win1: "1.67",
-      win2: "1.70",
-      draw: "2.8",
+      bets: [
+        {
+          name: "Бавария",
+          title: "win1",
+          ratio: "1.67",
+          position: 0
+        },
+        {
+          name: "Ничья",
+          title: "draw",
+          ratio: "2.8",
+          position: 1
+        },
+        {
+          name: "Лестер",
+          title: "win2",
+          ratio: "1.70",
+          position: 2
+        }
+      ],
+      date: new Date("02.17.2022").toLocaleString(),
     },
     {
-      team1: "Челси",
-      team2: "Ливерпуль",
       id: 3,
-      date: "14.02.2022",
-      win1: "2.41",
-      win2: "1.28",
-      draw: "2.85",
+      bets: [
+        {
+          name: "Челси",
+          title: "win1",
+          ratio: "2.41",
+          position: 0
+        },
+        {
+          name: "Ничья",
+          title: "draw",
+          ratio: "2.85",
+          position: 1
+        },
+        {
+          name: "Ливерпуль",
+          title: "win2",
+          ratio: "1.28",
+          position: 2
+        }
+      ],
+      date: new Date("02.14.2022").toLocaleString(),
     },
     {
-      team1: "Тотенхэм",
-      team2: "Милан",
       id: 4,
-      date: "14.02.2022",
-      win1: "1.64",
-      win2: "1.88",
-      draw: "1.65",
+      bets: [
+        {
+          name: "Тотенхэм",
+          title: "win1",
+          ratio: "1.64",
+          position: 0
+        },
+        {
+          name: "Ничья",
+          title: "draw",
+          ratio: "1.65",
+          position: 1
+        },
+        {
+          name: "Милан",
+          title: "win2",
+          ratio: "1.88",
+          position: 2
+        }
+      ],
+      date: new Date("02.14.2022").toLocaleString(),
     },
     {
-      team1: "Интер",
-      team2: "Наполи",
       id: 5,
-      date: "11.02.2022",
-      win1: "1.89",
-      win2: "1.55",
-      draw: "3.37",
+      bets: [
+        {
+          name: "Интер",
+          title: "win1",
+          ratio: "1.89",
+          position: 0
+        },
+        {
+          name: "Ничья",
+          title: "draw",
+          ratio: "3.37",
+          position: 1
+        },
+        {
+          name: "Наполи",
+          title: "win2",
+          ratio: "1.55",
+          position: 2
+        }
+      ],
+      date: new Date("02.11.2022").toLocaleString(),
     },
     {
-      team1: "Ювентус",
-      team2: "Лацио",
       id: 6,
-      date: "11.02.2022",
-      win1: "1.44",
-      win2: "2.0",
-      draw: "3.9",
+      bets: [
+        {
+          name: "Ювентус",
+          title: "win1",
+          ratio: "1.44",
+          position: 0
+        },
+        {
+          name: "Ничья",
+          title: "draw",
+          ratio: "2.0",
+          position: 1
+        },
+        {
+          name: "Лацио",
+          title: "win2",
+          ratio: "3.9",
+          position: 2
+        }
+      ],
+      date: new Date("02.11.2022").toLocaleString(),
     },
     {
-      team1: "Порту",
-      team2: "Фиорентина",
       id: 7,
-      date: "10.02.2022",
-      win1: "1.71",
-      win2: "1.28",
-      draw: "2.05",
+      bets: [
+        {
+          name: "Порту",
+          title: "win1",
+          ratio: "1.71",
+          position: 0
+        },
+        {
+          name: "Ничья",
+          title: "draw",
+          ratio: "1.28",
+          position: 1
+        },
+        {
+          name: "Фиорентина",
+          title: "win2",
+          ratio: "2.05",
+          position: 2
+        }
+      ],
+      date: new Date("10.02.2022").toLocaleString(),
     },
   ]

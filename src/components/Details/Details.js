@@ -5,7 +5,7 @@ import {events} from "../../shared/const";
 import {getTeamName} from "../../shared/helpers/getTeamName";
 
 
-export const Details = ({setBetResult, setLastEvent, clearLastBet}) => {
+export const Details = ({setBetResult, setLastEvent}) => {
 
     const navigate = useNavigate()
     let {id} = useParams()
@@ -13,7 +13,6 @@ export const Details = ({setBetResult, setLastEvent, clearLastBet}) => {
     const [selectedResult, setSelectedResult] = useState('')
 
     useEffect(() => {
-        clearLastBet();
         setEvent(events.find(x => x.id === +id))
     }, [])
 
@@ -43,11 +42,12 @@ export const Details = ({setBetResult, setLastEvent, clearLastBet}) => {
                                         setBetResult(bet.name);
                                         setLastEvent(event);
                                         setSelectedResult(bet.name)}}>
-                                bet.title<br/>{bet.ratio}
+                                {bet.title}<br/>{bet.ratio}
                             </Button>
                         ))}
                     </div>
                     <button onClick={goToHome}>Сделать ставку</button>
+                    <button onClick={goToHome}>Назад</button>
                 </div>) : null
             }
         </div>

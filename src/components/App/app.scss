@@ -3,13 +3,12 @@
   background-color: #e0dede;
   display: flex;
   flex-direction: column;
-}
 
-/*@media (max-width: 490px) {*/
-/*  .App {*/
-/*    height: 851px;*/
-/*  }*/
-/*}*/
+  .app__get-info {
+    text-align: center;
+    font-size: 20px;
+  }
+}
 
 .App .success {
   font-size: 24px;

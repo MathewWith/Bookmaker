@@ -1,0 +1,13 @@
+html,
+body,
+#root,
+#root > div {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  position: absolute;
+}
